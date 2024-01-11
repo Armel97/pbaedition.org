@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+<body>
+    <input id="id_bouton_radio" name="gent" type="radio">
+
+    <script>
+        $("#id_bouton_radio").click(function () {
+                $("#id_bouton_radio").prop("checked", true);
+                alert('Mon bouton radio a été coché');
+
+            });
+        
+
+         $("#gent").keyup(function(event) {
+  
+        var valeur=$("#gent").val();
+        console.log(valeur)
+});
+    </script>
+
+</body>
+</html>
