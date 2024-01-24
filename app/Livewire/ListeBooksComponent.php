@@ -19,7 +19,7 @@ class ListeBooksComponent extends Component
     protected $paginationTheme = 'bootstrap';
     public $searchTerm;
 
-    public $book_id, $title, $author, $real_price, $promotion_price, $image, $oldImage, $newImage, $description, $category_id, $status, $type; 
+    public $book_id, $title, $author, $real_price, $promotion_price, $image, $oldImage, $newImage, $description, $category_id, $status, $type, $amazon; 
 
     public function mount(Book $book)
     {
@@ -32,6 +32,7 @@ class ListeBooksComponent extends Component
             'real_price' =>'',
             'promotion_price' =>'',
             'description' =>'',
+            'amazon' =>'',
             'category_id' =>'required',
             'author' =>'required',
             'status' =>'required',
@@ -52,6 +53,7 @@ class ListeBooksComponent extends Component
         $this->real_price = $book->real_price;
         $this->promotion_price = $book->promotion_price;
         $this->description = $book->description;
+        $this->amazon = $book->amazon;
         $this->category_id = $book->category_id;
         $this->status = $book->status;
         $this->author = $book->author;
@@ -80,6 +82,7 @@ class ListeBooksComponent extends Component
             'promotion_price'=>$validateData['promotion_price'],
             'real_price'=>$validateData['real_price'],
             'description'=>$validateData['description'],
+            'amazon'=>$validateData['amazon'],
             'type'=>$validateData['type'],
             'status'=>$validateData['status'],
             'author'=>$validateData['author'],
@@ -123,6 +126,7 @@ class ListeBooksComponent extends Component
             'real_price' =>'',
             'promotion_price' =>'',
             'description' =>'',
+            'amazon' =>'',
             'category_id' =>'required',
             'author' =>'required',
             'status' =>'required',
@@ -148,6 +152,7 @@ class ListeBooksComponent extends Component
             'promotion_price'=>$validateData['promotion_price'],
             'real_price'=>$validateData['real_price'],
             'description'=>$validateData['description'],
+            'amazon'=>$validateData['amazon'],
             'type'=>$validateData['type'],
             'status'=>$validateData['status'],
             'author'=>$validateData['author'],

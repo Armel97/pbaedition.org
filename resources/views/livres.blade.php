@@ -11,7 +11,7 @@
   <meta name="description" content="Nous avons des livres sur le leadership, la jeunesse, les couples et familles, la chrétienté et croissance spirituelle ...">
   <meta name="author" content="Armel Eugène EKE">
   <link rel="stylesheet" href="{{ asset('assets/ceco-assets/style.css') }}">
-  <meta name="keywords" content="Les éditions PBA, exploitation des livres , leadership, chrétienté, croissance spirituelle, motivation, prédication, recueil des prénoms">
+  <meta name="keywords" content="Les éditions PBA, exploitation des livres , leadership, chrétienté, croissance spirituelle, motivation, prédication, recueil des prénoms, Les éditions PBA au Bénin, Abomey-Calavi, PBA">
 
   <meta property="og:url" content="https://pbaeditions.org/livres" />
   <meta property="og:title" content="PBA Éditions | Nos livres" />

@@ -11,7 +11,7 @@
   <meta name="description" content="Nos partenaires aux PBA">
   <meta name="author" content="Armel Eugène EKE">
   <link rel="stylesheet" href="{{ asset('assets/ceco-assets/style.css') }}">
-  <meta name="keywords" content="Les éditions PBA, équipe">
+  <meta name="keywords" content="Les éditions PBA, équipe, Les éditions PBA au Bénin, Abomey-Calavi, PBA">
 
   <meta property="og:url" content="https://pbaeditions.org/partners" />
   <meta property="og:title" content="PBA Éditions | Nos partenaires aux PBA" />

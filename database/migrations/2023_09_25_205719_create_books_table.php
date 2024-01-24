@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('promotion_price')->nullable();
             $table->string('image')->nullable();
             $table->text('description')->nullable();
+            $table->text('amazon')->nullable();
             $table->foreignId('category_id')->constrained();
             $table->enum('status', ['Non actif', 'Actif'])->default('Non actif');
             $table->enum('type', ['Les livres', 'A paraître', 'Nouveautés', 'LivresHippo'])->default('Les livres');

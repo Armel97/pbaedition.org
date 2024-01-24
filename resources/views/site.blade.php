@@ -11,12 +11,12 @@
   <meta name="description" content="Éditions PBA est une maison d’édition, basée à Abomey-Calavi (Bénin), qui publie des ouvrages de langue française écrits par les Africains pour l’édification du corps de Christ dans le monde. Les ouvrages des PBA sont destinés aux étudiants, aux jeunes, aux leaders, aux responsables et membres ...">
   <meta name="author" content="Armel Eugène EKE">
   <link rel="stylesheet" href="{{ asset('assets/ceco-assets/style.css') }}">
-  <meta name="keywords" content="Les éditions PBA, Edition, Diffusion, Publication, Formation, Livre chrétiens, Mariage, Prédication">
+  <meta name="keywords" content="Les éditions PBA, Edition, Diffusion, Publication, Formation, Livre chrétiens, Mariage, Prédication, Les éditions PBA au Bénin, Abomey-Calavi, PBA">
 
   <meta property="og:url" content="https://pbaeditions.org" />
   <meta property="og:title" content="PBA Éditions, un livre, une expérience." />
   <meta property="og:description" content="Éditions PBA est une maison d’édition, basée à Abomey-Calavi (Bénin), qui publie des ouvrages de langue française écrits par les Africains pour l’édification du corps de Christ dans le monde. Les ouvrages des PBA sont destinés aux étudiants, aux jeunes, aux leaders." />
-  <meta property="og:image" content="{{asset('assets/site-images/logo.jpg')}}" />
+  <meta property="og:image" content="{{asset('assets/site-images/preview.png')}}" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 

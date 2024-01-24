@@ -17,6 +17,7 @@ class Book extends Model
         'promotion_price',
         'image',
         'description',
+        'amazon',
         'category_id',
         'status',
         'type',

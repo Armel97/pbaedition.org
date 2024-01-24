@@ -13,7 +13,7 @@
   <meta name="description" content="Les éditions Presses Bibliques Africaines (PBA) sont une initiative des Groupes Bibliques Universitaires d’Afrique Francophone (GBUAF)">
   <meta name="author" content="Armel Eugène EKE">
   <link rel="stylesheet" href="{{ asset('assets/ceco-assets/style.css') }}">
-  <meta name="keywords" content="Les éditions PBA, Edition, Diffusion, Publication, Formation, Livre chrétiens, Mariage, Prédication">
+  <meta name="keywords" content="Les éditions PBA, Edition, Diffusion, Publication, Formation, Livre chrétiens, Mariage, Prédication, au Bénin, Abomey-Calavi, PBA">
 
   <meta property="og:url" content="https://pbaeditions.org/about" />
   <meta property="og:title" content="PBA Éditions | Notre histoire" />

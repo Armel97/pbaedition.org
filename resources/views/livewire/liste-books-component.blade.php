@@ -189,6 +189,12 @@
                                      </div>
                                  </div>
                                  <div class="col-md-12">
+                                     <label>Lien amazon: </label>
+                                     <div class="mb-1">
+                                         <textarea wire:model="amazon" class="form-control"></textarea>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-12">
                                      <label>description: </label>
                                      <div class="mb-1">
                                          <textarea wire:model="description" class="form-control"></textarea>
@@ -307,13 +313,16 @@
                                      </div>
                                  </div>
                                  <div class="col-md-12">
+                                     <label>Lien amazon: </label>
+                                     <div class="mb-1">
+                                         <textarea wire:model="amazon" class="form-control"></textarea>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-12">
                                      <label>description: </label>
                                      <div class="mb-1">
                                          <textarea wire:model="description" class="form-control"></textarea>
                                      </div>
-
-
-
                                  </div>
                              </div>
 
