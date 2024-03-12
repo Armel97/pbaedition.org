@@ -44,8 +44,7 @@ class NewIntershipNotification extends Notification implements ShouldQueue
                     ->subject("Offre de stage publiée")
                     ->line('Nous venons de publier une offre de stage sur notre site web.')
                     ->action('Cliquez ici pour consulter', url('/stages'))
-                    ->line('Merci d\'être abonné à notre site')
-                    ->from('noreply@pbaeditions.org', 'Les éditions PBA');
+                    ->line('Merci d\'être abonné à notre site');
     }
 
     /**

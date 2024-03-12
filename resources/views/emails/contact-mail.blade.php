@@ -1,226 +1,290 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <title>PBA SARL</title>
+  <!--
 
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Bienvenue sur notre plateforme</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style type="text/css">
-        @media screen {
-            @font-face {
-                font-family: 'Source Sans Pro';
-                font-style: normal;
-                font-weight:
-                    400;
-                src: local('Source Sans Pro Regular'),
-                    local('SourceSansPro-Regular'),
-                    url(https://fonts.gstatic.com/s/sourcesanspro/v10/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
-            }
+    PBA SARL
+    =====================================
 
-            @font-face {
-                font-family: 'Source Sans Pro';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Source Sans Pro
- Bold'), local(' SourceSansPro-Bold'),
- url(https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format('woff');
-                }
-            }
+    Based on code used and tested by Litmus (@litmusapp)
+    Originally developed by Kevin Mandeville (@KEVINgotbounce)
+    Cleaned up by Jason Rodriguez (@rodriguezcommaj)
+    Presented by A List Apart (@alistapart)
 
-            body, table, td, a {
-                -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;
-            }
+    Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
+    It's highly recommended that you test using a service like Litmus and your own devices.
 
-            / table, td {
-                mso-table-rspace: 0pt; mso-table-lspace: 0pt;
-            }
+    Enjoy!
 
-            img {
-                -ms-interpolation-mode: bicubic;
-            }
+ -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
 
-            a[x-apple-data-detectors] {
-                font-family: inherit !important; font-size: inherit !important; font-weight: inherit !important; line-height: inherit !important; color: inherit !important; text-decoration: none !important;
-            }
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
 
-            div[style*="margin: 16px 0;"] {
-                margin: 0 !important;
-            }
+    /* iOS BLUE LINKS */
+    .appleBody a {color:#68440a; text-decoration: none;}
+    .appleFooter a {color:#999999; text-decoration: none;}
 
-            body {
-                width: 100% !important; height: 100% !important; padding: 0 !important; margin: 0 !important;
-            }
+    /* MOBILE STYLES */
+    @media screen and (max-width: 525px) {
 
-            table {
-                border-collapse: collapse !important;
-            }
+        /* ALLOWS FOR FLUID TABLES */
+        table[class="wrapper"]{
+          width:100% !important;
+        }
 
-            a {
-                color: #F66884;
-            }
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        td[class="logo"]{
+          text-align: left;
+          padding: 20px 0 20px 0 !important;
+        }
 
-            img {
-                height: auto; line-height: 100%; text-decoration: none; border: 0;
-                outline: none;
-            }
-    </style>
+        td[class="logo"] img{
+          margin:0 auto!important;
+        }
 
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        td[class="mobile-hide"]{
+          display:none;}
+
+        img[class="mobile-hide"]{
+          display: none !important;
+        }
+
+        img[class="img-max"]{
+          max-width: 100% !important;
+          height:auto !important;
+        }
+
+        /* FULL-WIDTH TABLES */
+        table[class="responsive-table"]{
+          width:100%!important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        td[class="padding"]{
+          padding: 10px 5% 15px 5% !important;
+        }
+
+        td[class="padding-copy"]{
+          padding: 10px 5% 10px 5% !important;
+          text-align: center;
+        }
+
+        td[class="padding-meta"]{
+          padding: 30px 5% 0px 5% !important;
+          text-align: center;
+        }
+
+        td[class="no-pad"]{
+          padding: 0 0 20px 0 !important;
+        }
+
+        td[class="no-padding"]{
+          padding: 0 !important;
+        }
+
+        td[class="section-padding"]{
+          padding: 15px 15px 15px 15px !important;
+        }
+
+        td[class="section-padding-bottom-image"]{
+          padding: 15px 15px 0 15px !important;
+        }
+
+        /* ADJUST BUTTONS ON MOBILE */
+        td[class="mobile-wrapper"]{
+            padding: 10px 5% 15px 5% !important;
+        }
+
+        table[class="mobile-button-container"]{
+            margin:0 auto;
+            width:100% !important;
+        }
+
+        a[class="mobile-button"]{
+            width:80% !important;
+            padding: 15px !important;
+            border: 0 !important;
+            font-size: 16px !important;
+        }
+
+    }
+  </style>
 </head>
-<div style="background-color: #e9ecef;">
 
-    <!-- start preheader -->
-    <div class="preheader" style="display: none; max-width: 0; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opacity: 0;">
-        A preheader is the short summary text that follows the subject line
-        when an email is viewed in the inbox.
-    </div>
-    <!-- end preheader -->
+<body style="margin: 0; padding: 0;">
 
-    <!-- start body -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!-- HEADER -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#f8f8f8">
+        <div align="center" style="padding: 0px 15px 0px 15px;">
+          <table border="0" cellpadding="0" cellspacing="0" width="500" class="wrapper">
+            <!-- LOGO/PREHEADER TEXT -->
+            <tr>
+              <td style="padding: 20px 0px 30px 0px;" class="logo">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td bgcolor="#ffffff" width="100" align="left">
+                      <a href="https://pbaeditions.org/" target="_blank"><img alt="Logo" src="https://pbaeditions.org/assets/site-images/logo.jpg" width="52" height="78" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0"></a>
+                    </td>
+                    <td bgcolor="#ffffff" width="400" align="right" class="mobile-hide">
+                      <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td align="right" style="padding: 0 0 5px 0; font-size: 14px; font-family: Arial, sans-serif; color: #666666; text-decoration: none;"><span style="color: #666666; text-decoration: none;">
+                          Presses Bibliques Africaines<br>Un livre, une expérience.
+                        </span></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
 
-        <!-- start logo -->
-        <tr>
-            <td align="center" bgcolor="#e9ecef">
-                <!--[if (gte mso 9)|(IE)]>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+   <!-- COMPACT ARTICLE SECTION -->
+   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#fff" align="center" style="padding: 15px 15px 15px 15px;" class="section-padding">
+        <table border="0" cellpadding="0" cellspacing="0" width="500" style="padding:0 0 20px 0;" class="responsive-table">
+          <!-- TITLE -->
+          <tr>
+           
+            <td style="padding: 0px 0 0 0;" class="no-padding">
+              <!-- ARTICLE -->
+              <table border="0" cellspacing="0" cellpadding="0" width="100%">
                 <tr>
-                    <td align="center" valign="top" width="600">
-            <![endif]-->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-                    <tr>
+                  <td align="left" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;" class="padding-meta">Nom : {{ $mailData['name'] }} </td>
+                </tr>
+             
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 0 0 0;" class="no-padding">
+              <!-- ARTICLE -->
+              <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                  <td align="left" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;" class="padding-meta">Email : <a href="mailto:{{ $mailData['email'] }}">{{ $mailData['email'] }}</a> </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 0 0 0;" class="no-padding">
+              <!-- ARTICLE -->
+              <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                  <td align="left" style="padding: 0 0 5px 25px; font-size: 13px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;" class="padding-meta">Téléphone : <a href="tel:{{ $mailData['phone'] }}">{{ $mailData['phone'] }}</a> </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+       
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+  <!-- ONE COLUMN W/ BOTTOM IMAGE SECTION -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="padding: 15px 15px 0 15px;" class="section-padding-bottom-image">
+        <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table">
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                    <!-- COPY -->
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="center" style="font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #333333;" class="padding-copy">{{ $mailData['subject'] }}</td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">{{ $mailData['body'] }}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <!-- BULLETPROOF BUTTON -->
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                      <tr>
+                        <td align="center" style="padding: 25px 0 0 0;" class="padding-copy">
+                          <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                            <tr>
+                              <td align="center"></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+  <!-- FOOTER -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#f8f8f8" align="center">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td style="padding: 20px 0px 20px 0px;">
+              <!-- UNSUBSCRIBE COPY -->
+              <table width="500" border="0" cellspacing="0" cellpadding="0" align="center" class="responsive-table">
+                <tr>
+                  <td align="center" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color:#666666;">
+                    <span class="appleFooter" style="color:#666666;">Editions Presses Bibliques Africaines, Calavi Zopah,
+                                Rue du Supermarché du Pont.</span>
+                    <br><a class="original-only" style="color: #666666; text-decoration: none;">Ce message a été envoyé à </a><span class="original-only" style="font-family: Arial, sans-serif; font-size: 12px; color: #444444;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                   
+                    <a style="color: #666666; text-decoration: none;" href="mailto:{{ $mailData['maison'] }}">{{ $mailData['maison'] }}</a>
                     
-                        <td align="center" valign="top" style="padding: 36px 24px;">
-                            <img src="https://pbaeditions.org/assets/site-images/logo.jpg" alt="Logo" border="0" width="100" style="display: block; width: 60px; max-width: 60px; min-width: 60px;">
-                            
-                        </td>
-                    </tr>
-                </table>
-                <!--[if (gte mso 9)|(IE)]>
+                  
+                  </td>
+                </tr>
+              </table>
             </td>
-            </tr>
-            </table>
-            <![endif]-->
-            </td>
-        </tr>
-        <!-- end logo -->
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 
-        <!-- start hero -->
-        <tr>
-            <td align="center" bgcolor="#e9ecef">
-                <!--[if (gte mso 9)|(IE)]>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-                <tr>
-                    <td align="center" valign="top" width="600">
-            <![endif]-->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-                    <tr>
-                        <td align="left" bgcolor="#ffffff" style="padding: 36px 24px 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; border-top: 3px solid #d4dadf;">
-                            <h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -1px; line-height: 48px;">{{ $mailData['subject'] }}</h1>
-                        </td>
-                    </tr>
-                </table>
-                <!--[if (gte mso 9)|(IE)]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
-            </td>
-        </tr>
-        <!-- end hero -->
-
-        <!-- start copy block -->
-        <tr>
-            <td align="center" bgcolor="#e9ecef">
-                <!--[if (gte mso 9)|(IE)]>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-                <tr>
-                    <td align="center" valign="top" width="600">
-            <![endif]-->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-
-                    <!-- start copy -->
-                    <tr>
-                        <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-                            <p style="margin: 0;">
-                                {{ $mailData['body'] }}</p>
-                           
-                        </td>
-                    </tr>
-                    <!-- end copy -->
-
-
-                    <!-- start copy -->
-                    <tr>
-                        <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; border-bottom: 3px solid #d4dadf">
-                            <p style="margin: 0;">Cordialement,<br />
-                               Nom : {{ $mailData['name'] }} ,<br />
-                               Contact : {{ $mailData['phone'] }} ,<br />
-                               Email : <a href="mailto:{{ $mailData['email'] }}">{{ $mailData['email'] }}</a>
-                            </p>
-                        </td>
-                    </tr>
-                    <!-- end copy -->
-
-                </table>
-                <!--[if (gte mso 9)|(IE)]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
-            </td>
-        </tr>
-        <!-- end copy block -->
-
-        <!-- start footer -->
-        <tr>
-            <td align="center" bgcolor="#e9ecef" style="padding: 24px;">
-                <!--[if (gte mso 9)|(IE)]>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-                <tr>
-                    <td align="center" valign="top" width="600">
-            <![endif]-->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-
-                    <!-- start unsubscribe -->
-                    <tr>
-                        <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
-                            <img src="https://pbaeditions.org/assets/site-images/logo.jpg" alt="Logo" border="0" width="75" style="display: block; width: 75px; max-width: 75px; min-width: 75px;" />
-                        </td>
-                    </tr>
-
-                    <!-- start unsubscribe -->
-                    <tr>
-                        <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
-                            <p style="margin: 0;">© Editions Presses Bibliques Africaines, Calavi Zopah,
-                                Rue du Supermarché du Pont.</p>
-                        </td>
-                    </tr>
-                    <!-- end unsubscribe -->
-
-                    <!-- start permission -->
-                    <tr>
-                        <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
-                            <p style="margin: 0;">
-                                Ce message a été envoyé à <a href="mailto:{{ $mailData['maison'] }}">{{ $mailData['maison'] }}</a>
-                            </p>
-                        </td>
-                    </tr>
-                    <!-- end permission -->
-
-                </table>
-                <!--[if (gte mso 9)|(IE)]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
-            </td>
-        </tr>
-        <!-- end footer -->
-
-    </table>
-    <!-- end body -->
-
-</div>
+</body>
 
 </html>

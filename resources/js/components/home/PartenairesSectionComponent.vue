@@ -45,7 +45,7 @@
               </p>
             </div>
             <div class="s-sponser">
-              <img src="" alt="" />
+              <img src="./../../../asset/assets/site-images/partenaires/pja-logo.png" alt="" />
               <p class="text-center mt-2">
                 <a href="https://oasisinternationalpublishing.com">Publication pour la jeunesse africaine (PJA)</a>
               </p>

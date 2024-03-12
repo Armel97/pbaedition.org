@@ -44,8 +44,7 @@ class NewSubscriberNotification extends Notification implements ShouldQueue
                     ->subject("Abonnement sur PBA éditions")
                     ->line('Vous venez de vous abonner sur notre site web.')
                     ->action('Revenir sur le site', url('/'))
-                    ->line('Merci d\'être abonné à notre site')
-                    ->from('noreply@pbaeditions.org', 'Les éditions PBA');
+                    ->line('Merci d\'être abonné à notre site');
     }
 
     /**

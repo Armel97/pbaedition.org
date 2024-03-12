@@ -44,8 +44,7 @@ class NewTrainingNotification extends Notification implements ShouldQueue
                     ->subject("Nouvelle formation publiée")
                     ->line('Nous venons de publier une nouvelle formation sur notre site web.')
                     ->action('Cliquez ici pour consulter', url('/'))
-                    ->line('Merci d\'être abonné à notre site')
-                    ->from('noreply@pbaeditions.org', 'Les éditions PBA');
+                    ->line('Merci d\'être abonné à notre site');
     }
 
     /**

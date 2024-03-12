@@ -2,8 +2,8 @@
 import axios from 'axios'
 import store from '../store'
 
-const API_URL = 'https://pbaeditions.org/api'
-// const API_URL = 'http://pbaedition.org.test/api'
+// const API_URL = 'https://pbaeditions.org/api'
+const API_URL = 'http://pbaedition.org.test/api'
 
 const axiosClient = axios.create({
   baseURL: API_URL,
